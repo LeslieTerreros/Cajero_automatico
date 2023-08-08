@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./app.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="cashier-screen">
+        <div class="card">
+          <div class="nav">
+            <div class="img"></div>
+            <div class="logOut"><button type="button" id="logOut">Cerrar Sesion</button></div>
+          </div>
+          <div class="info">
+            <span>Bienvenido Banco ATM</span>
+            <h2 id="msj"></h2>
+            <form id="Form">
+              <div class="inputBox">
+                <input id="email" type="text" required="required" />
+                <span>Email</span>
+              </div>
+              <div class="inputBox">
+                <input id="pass" type="password" required="required" />
+                <span>Password</span>
+              </div>
+              <button type="submit" id="login">LogIn</button>
+            </form>
+            <div class="userData" id="account" style="display: none">
+              <h2 id="result"></h2>
+              <h2 id="transaction"></h2>
+              <p class="suggestion">¿Qué desea realizar?</p>
+              <button type="button" id="consultarMontoBtn">
+                Consultar saldo
+              </button>
+              <div>
+                <p class="saldoLabel">Saldo: <span id="saldo"></span></p>
+
+                <input
+                  id="ingresarMonto"
+                  type="number"
+                  name="text"
+                  class="input"
+                  placeholder="Monto a ingresar"
+                />
+
+                <input
+                  id="retirarMonto"
+                  type="number"
+                  name="text"
+                  class="input"
+                  placeholder="Monto a retirar"
+                />
+              </div>
+              <div class="buttons">
+                <button type="button" id="ingresarMontoBtn">Ingresar</button>
+                <button type="button" id="retirarMontoBtn">Retirar</button>
+              </div>
+         
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
